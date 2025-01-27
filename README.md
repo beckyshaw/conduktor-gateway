@@ -37,7 +37,7 @@ Follow these steps to deploy Conduktor Gateway to your AWS infrastructure.
 ---
 
 ## **Repository Structure** 📂
-
+```
 conduktor-gateway-terraform/ 
 ├── modules/ 
 │ └── ec2/ # Reusable Terraform module for EC2 
@@ -63,7 +63,7 @@ conduktor-gateway-terraform/
 ├── .gitignore 
 ├── README.md # Project documentation 
 └── variables.tf # Global variables
-
+```
 
 ---
 
