@@ -131,3 +131,54 @@ Apply the planned changes to deploy Conduktor Gateway. Use the -auto-approve fla
 Once applied, Terraform will output information such as the EC2 instance IP address. Use this to verify the Conduktor Gateway is running.
 
 ## GitHub Actions Workflow 🤖
+This repository uses a GitHub Actions workflow to automate deployments across environments.
+Steps to Trigger a Deployment:
+```
+    Navigate to the Actions tab of your GitHub repository.
+    Select the Deploy Conduktor Gateway workflow.
+    Click the "Run workflow" button.
+    Choose the target environment (dev, staging, or prod) from the dropdown menu.
+    Click Run workflow to start the deployment process.
+```
+GitHub Actions will handle the execution of Terraform commands to deploy or update resources in the selected environment.
+
+## Contributing 🤝
+
+We welcome contributions to improve this project! Follow these steps:
+
+    Fork the repository:
+        Click the "Fork" button at the top of this repository.
+
+    Clone your fork:
+```
+git clone https://github.com/your-username/conduktor-gateway-terraform.git
+cd conduktor-gateway-terraform
+```
+Create a new branch:
+```
+git checkout -b feature-branch-name
+```
+Make your changes:
+
+    Update Terraform configurations, modules, or documentation.
+
+Commit and push your changes:
+```
+git commit -m "Describe your changes"
+git push origin feature-branch-name
+```
+Submit a pull request:
+
+    Go to the original repository and click "New pull request".
+
+## License 📜
+
+This project is licensed under the MIT License. Feel free to use and adapt it for your needs.
+Contact 📬
+
+For questions or feedback, reach out to:
+```
+    Name: Becky Shaw
+    Email: testrooshaw@gmail.com
+    GitHub: beckyshaw
+```
