@@ -21,7 +21,7 @@ jobs:
       run: |
         AUTHOR=$(git log -1 --pretty=format:'%an')
         echo "Commit author is: $AUTHOR"
-        if [[ "$AUTHOR" != "BeckyShaw2" ]]; then
+        if [[ "$AUTHOR" != "BeckyShaw" ]]; then
           echo "Error: Commit author is not allowed. Only the authorised can commit directly."
           exit 1
         fi
