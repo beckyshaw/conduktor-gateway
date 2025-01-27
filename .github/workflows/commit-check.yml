@@ -16,7 +16,7 @@ jobs:
       run: |
         AUTHOR=$(git log -1 --pretty=format:'%an')
         echo "Commit author is: $AUTHOR"
-        if [[ "$AUTHOR" != "beckyshaw" ]]; then
+        if [[ "$AUTHOR" != "BeckyShaw" ]]; then
           echo "Commit author is not allowed. Only 'beckyshaw' can commit directly."
           exit 1
         fi
