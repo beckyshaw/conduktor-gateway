@@ -1,0 +1,22 @@
+name: Commit Check
+
+on:
+  push:
+    branches:
+      - main  # or any branch you want to protect
+
+jobs:
+  check-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Get Commit Author
+      run: |
+        AUTHOR=$(git log -1 --pretty=format:'%an')
+        echo "Commit author is: $AUTHOR"
+        if [[ "$AUTHOR" != "beckyshaw" ]]; then
+          echo "Commit author is not allowed. Only 'beckyshaw' can commit directly."
+          exit 1
+        fi
