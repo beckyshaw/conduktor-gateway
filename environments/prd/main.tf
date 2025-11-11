@@ -10,5 +10,5 @@ module "gateway" {
   kafka_bootstrap_servers = var.kafka_bootstrap_servers
   confluent_api_key    = var.confluent_api_key
   confluent_api_secret = var.confluent_api_secret
-  instance_name        = "conduktor-gateway-dev"
+  instance_name        = "conduktor-gateway-prd"
 }
